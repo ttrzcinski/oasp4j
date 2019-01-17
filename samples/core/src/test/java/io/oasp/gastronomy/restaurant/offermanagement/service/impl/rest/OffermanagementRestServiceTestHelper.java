@@ -1,14 +1,15 @@
 package io.oasp.gastronomy.restaurant.offermanagement.service.impl.rest;
 
+import java.time.DayOfWeek;
+
+import io.oasp.gastronomy.restaurant.offermanagement.common.api.WeeklyPeriod;
 import io.oasp.gastronomy.restaurant.offermanagement.logic.api.to.OfferEto;
 import io.oasp.gastronomy.restaurant.offermanagement.logic.api.to.SpecialEto;
-import io.oasp.gastronomy.restaurant.offermanagement.logic.api.to.WeeklyPeriod;
+import io.oasp.gastronomy.restaurant.offermanagement.logic.api.to.WeeklyPeriodEto;
 import io.oasp.gastronomy.restaurant.salesmanagement.logic.api.to.OrderCto;
 import io.oasp.gastronomy.restaurant.salesmanagement.logic.api.to.OrderPositionEto;
 import io.oasp.gastronomy.restaurant.salesmanagement.service.impl.rest.SalesmanagementHttpRestServiceTest;
 import io.oasp.gastronomy.restaurant.salesmanagement.service.impl.rest.SalesmanagementRestServiceTest;
-
-import java.time.DayOfWeek;
 
 /**
  * This is a helper class for the classes {@link SalesmanagementRestServiceTest} and
@@ -36,8 +37,10 @@ public class OffermanagementRestServiceTestHelper {
 
     return specialEto;
   }
-  private WeeklyPeriod createWeeklyPeriod(){
-    WeeklyPeriod period =  new WeeklyPeriod();
+
+  private WeeklyPeriod createWeeklyPeriod() {
+
+    WeeklyPeriod period = new WeeklyPeriodEto();
     period.setStartingDay(DayOfWeek.MONDAY);
     period.setStartingHour(8);
 
@@ -47,6 +50,7 @@ public class OffermanagementRestServiceTestHelper {
   }
 
   private OfferEto prepareSomeOffer() {
+
     OfferEto offerEto = new OfferEto();
     offerEto.setName("someOffer");
     offerEto.setId(1l);
