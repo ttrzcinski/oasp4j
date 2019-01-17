@@ -9,10 +9,6 @@ public interface Special extends ApplicationEntity {
 
   public void setName(String name);
 
-  public Long getOfferId();
-
-  public void setOfferId(Long offerId);
-
   public WeeklyPeriod getActivePeriod();
 
   public void setActivePeriod(WeeklyPeriod activePeriod);

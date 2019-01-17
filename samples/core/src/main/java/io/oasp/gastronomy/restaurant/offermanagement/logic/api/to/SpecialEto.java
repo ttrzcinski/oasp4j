@@ -17,10 +17,9 @@ public class SpecialEto extends AbstractEto implements Special {
 
   private Money specialPrice;
 
-  private Long offerId;
-
   public String getName() {
-		return name;
+
+    return this.name;
   }
 
   public void setName(String name) {
@@ -29,7 +28,8 @@ public class SpecialEto extends AbstractEto implements Special {
   }
 
   public OfferEto getOffer() {
-		return offer;
+
+    return this.offer;
   }
 
   public void setOffer(OfferEto offer) {
@@ -38,7 +38,8 @@ public class SpecialEto extends AbstractEto implements Special {
   }
 
   public WeeklyPeriod getActivePeriod() {
-		return activePeriod;
+
+    return this.activePeriod;
   }
 
   public void setActivePeriod(WeeklyPeriod activePeriod) {
@@ -47,24 +48,13 @@ public class SpecialEto extends AbstractEto implements Special {
   }
 
   public Money getSpecialPrice() {
-		return specialPrice;
+
+    return this.specialPrice;
   }
 
   public void setSpecialPrice(Money specialPrice) {
 
     this.specialPrice = specialPrice;
-  }
-
-  @Override
-  public Long getOfferId() {
-
-    return offerId;
-  }
-
-  @Override
-  public void setOfferId(Long offerId) {
-
-    this.offerId = offerId;
   }
 
 }
