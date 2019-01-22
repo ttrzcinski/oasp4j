@@ -26,6 +26,8 @@ public class OfferEto extends MenuItemEto implements Offer {
 
   private OfferState state;
 
+  private Money special;
+
   /**
    * The constructor.
    */
@@ -104,5 +106,15 @@ public class OfferEto extends MenuItemEto implements Offer {
   public void setState(OfferState state) {
 
     this.state = state;
+  }
+
+  public Money getSpecial() {
+
+    return this.special;
+  }
+
+  public void setSpecial(Money special) {
+
+    this.special = special;
   }
 }

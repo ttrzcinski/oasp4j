@@ -8,84 +8,58 @@ import javax.validation.constraints.Min;
 
 import io.oasp.gastronomy.restaurant.offermanagement.common.api.WeeklyPeriod;
 
-/**
- * @author TTRZCINS
- *
- */
 @Embeddable
 public class WeeklyPeriodEmbeddable implements WeeklyPeriod {
 
   private DayOfWeek startingDay;
 
-  @Max(24)
-  @Min(0)
   private int startingHour;
 
   private DayOfWeek endingDay;
 
-  @Max(24)
-  @Min(0)
   private int endingHour;
 
-  /**
-   * @return startingDay
-   */
+  private static final long serialVersionUID = 1L;
+
   public DayOfWeek getStartingDay() {
 
     return this.startingDay;
   }
 
-  /**
-   * @param startingDay new value of {@link #getstartingDay}.
-   */
   public void setStartingDay(DayOfWeek startingDay) {
 
     this.startingDay = startingDay;
   }
 
-  /**
-   * @return startingHour
-   */
+  @Max(24)
+  @Min(0)
   public int getStartingHour() {
 
     return this.startingHour;
   }
 
-  /**
-   * @param startingHour new value of {@link #getstartingHour}.
-   */
   public void setStartingHour(int startingHour) {
 
     this.startingHour = startingHour;
   }
 
-  /**
-   * @return endingDay
-   */
   public DayOfWeek getEndingDay() {
 
     return this.endingDay;
   }
 
-  /**
-   * @param endingDay new value of {@link #getendingDay}.
-   */
   public void setEndingDay(DayOfWeek endingDay) {
 
     this.endingDay = endingDay;
   }
 
-  /**
-   * @return endingHour
-   */
+  @Max(24)
+  @Min(0)
   public int getEndingHour() {
 
     return this.endingHour;
   }
 
-  /**
-   * @param endingHour new value of {@link #getendingHour}.
-   */
   public void setEndingHour(int endingHour) {
 
     this.endingHour = endingHour;

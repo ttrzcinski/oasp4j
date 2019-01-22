@@ -12,6 +12,9 @@ public abstract class PermissionConstants {
   /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve offer. */
   public static final String FIND_OFFER = "FindOffer";
 
+  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve special. */
+  public static final String FIND_SPECIAL = "FindsPECIAL";
+
   /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save offer. */
   public static final String SAVE_OFFER = "SaveOffer";
 

@@ -3,24 +3,64 @@ package io.oasp.gastronomy.restaurant.offermanagement.common.api;
 import java.time.DayOfWeek;
 
 /**
- * @author TTRZCINS
- *
+ * Common interface for WeeklyPeriodEmbeddable.
  */
 public interface WeeklyPeriod {
 
-  public DayOfWeek getStartingDay();
+  /**
+   * Returns the field startingDay.
+   *
+   * @return the field startingDay.
+   */
+  DayOfWeek getStartingDay();
 
-  public void setStartingDay(DayOfWeek startingDay);
+  /**
+   * Sets the new value for the field startingDay.
+   *
+   * @param startingDay new value for the field startingDay.
+   */
+  void setStartingDay(DayOfWeek startingDay);
 
-  public int getStartingHour();
+  /**
+   * Returns the field startingHour.
+   *
+   * @return the field startingHour.
+   */
+  int getStartingHour();
 
-  public void setStartingHour(int startingHour);
+  /**
+   * Sets the new value for the field startingHour.
+   *
+   * @param startingHour new value for the field startingHour.
+   */
+  void setStartingHour(int startingHour);
 
-  public DayOfWeek getEndingDay();
+  /**
+   * Returns the field endingDay.
+   *
+   * @return the field endingDay.
+   */
+  DayOfWeek getEndingDay();
 
-  public void setEndingDay(DayOfWeek endingDay);
+  /**
+   * Sets the new value for the field endingDay.
+   *
+   * @param endingDay new value for the field endingDay.
+   */
+  void setEndingDay(DayOfWeek endingDay);
 
-  public int getEndingHour();
+  /**
+   * Returns the field endingHour.
+   *
+   * @return the field endingHour.
+   */
+  int getEndingHour();
 
-  public void setEndingHour(int endingHour);
+  /**
+   * Sets the new value for the field endingHour.
+   *
+   * @param endingHour new value for the field endingHour.
+   */
+  void setEndingHour(int endingHour);
+
 }
